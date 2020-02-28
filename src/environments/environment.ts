@@ -10,7 +10,7 @@ export const environment = {
   daytransactioncountUrl: 'https://blockchain.info/q/24hrtransactioncount',
   daybtcsentUrl: 'https://blockchain.info/q/24hrbtcsent',
   hashrateUrl:'https://blockchain.info/q/hashrate',
-  getdifficulty: 'https://blockchain.info/q/getdifficulty'
+  getdifficultyUrl: 'https://blockchain.info/q/getdifficulty'
 };
 
 
