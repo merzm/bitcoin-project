@@ -38,6 +38,6 @@ export class BitcoinService {
   }
 
   getChartData() {
-    // https://api.blockchain.info/charts/transactions-per-second?timespan=1days&rollingAverage=8hours&format=json
+    return this.http.get(`https://api.blockchain.info/charts/transactions-per-second?timespan=1days&rollingAverage=8hours&format=json?cors=true`);
   }
 }

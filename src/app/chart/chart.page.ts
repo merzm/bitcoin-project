@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BitcoinService } from '../shared/services/bitcoin.service';
 
 @Component({
   selector: 'app-chart',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chart.page.scss'],
 })
 export class ChartPage implements OnInit {
-
-  constructor() { }
+  chart = [];
+  constructor(private bcService: BitcoinService) { }
 
   ngOnInit() {
+    // this.bcService.getChartData().subscribe(data => console.log(data));
   }
 
 }
