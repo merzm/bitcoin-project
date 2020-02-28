@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Bitcoin Umrechner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="page-content">    
+    <ion-item>
+      <ion-label position="floating">Betrag</ion-label>
+      <ion-input type="number" [(ngModel)]="currencyValue" (ngModelChange)="onChangeCurrencyValue($event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ausgangswährung</ion-label>
+      <ion-select [(ngModel)]="currency" (ngModelChange)="onChangeCurrency($event)" okText="Auswählen" cancelText="Abbrechen">
+        <ion-select-option value="EUR">EUR</ion-select-option>
+        <ion-select-option value="USD">USD</ion-select-option>
+        <ion-select-option value="AUD">AUD</ion-select-option>
+        <ion-select-option value="NZD">NZD</ion-select-option>
+        <ion-select-option value="GBP">GBP</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Umgerechnet in Bitcoins</ion-label>
+      <ion-input disabled [(ngModel)]="bitCoinValue"></ion-input>
+    </ion-item>
+  </div>
+</ion-content>

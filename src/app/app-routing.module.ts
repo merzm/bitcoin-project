@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'bitcoin-details',
     loadChildren: () => import('./bitcoin-details/bitcoin-details.module').then( m => m.BitcoinDetailsPageModule)
+  },
+  {
+    path: 'bitcoin-converter',
+    loadChildren: () => import('./bitcoin-converter/bitcoin-converter.module').then( m => m.BitcoinConverterPageModule)
   }
 ];
 
