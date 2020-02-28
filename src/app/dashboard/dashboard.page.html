@@ -13,7 +13,7 @@
       <ion-col size="12" size-sm="6" size-md="4" *ngFor="let currency of currenciesData | keyvalue">
         <ion-card>
           <ion-card-header>
-            <ion-card-title>{{currency.key}}</ion-card-title>
+            <ion-card-title color="primary">{{currency.key}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
             <p>Buy: {{currency.value.buy}}{{currency.value.symbol}}</p>
