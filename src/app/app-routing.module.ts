@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'bitcoin-details',
+    loadChildren: () => import('./bitcoin-details/bitcoin-details.module').then( m => m.BitcoinDetailsPageModule)
   }
 ];
 

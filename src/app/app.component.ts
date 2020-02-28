@@ -16,6 +16,11 @@ export class AppComponent implements OnInit {
       title: 'Dashboard',
       url: 'dashboard',
       icon: 'mail'
+    }, 
+    {
+      title: 'Bitcoin-Details',
+      url: 'bitcoin-details',
+      icon: 'mail'
     }
   ];
 
