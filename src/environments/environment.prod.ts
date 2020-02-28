@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: false,
+  tickerUrl: 'https://blockchain.info/ticker'
 };
