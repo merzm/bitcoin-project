@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col size="12" size-sm="6" size-md="4" *ngFor="let card of bitCoinInfoCards">
+      <ion-col size="12" *ngFor="let card of bitCoinInfoCards">
         <app-bitcoin-info-card [card]="card"></app-bitcoin-info-card>
       </ion-col>
     </ion-row>
