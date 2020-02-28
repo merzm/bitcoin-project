@@ -36,4 +36,8 @@ export class BitcoinService {
   getDifficulty(): Observable<number> {
     return this.http.get<number>(environment.getdifficultyUrl);
   }
+
+  getChartData() {
+    // https://api.blockchain.info/charts/transactions-per-second?timespan=1days&rollingAverage=8hours&format=json
+  }
 }

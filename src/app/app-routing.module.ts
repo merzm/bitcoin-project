@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'bitcoin-converter',
     loadChildren: () => import('./bitcoin-converter/bitcoin-converter.module').then( m => m.BitcoinConverterPageModule)
+  },
+  {
+    path: 'chart',
+    loadChildren: () => import('./chart/chart.module').then( m => m.ChartPageModule)
   }
 ];
 

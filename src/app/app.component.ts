@@ -26,6 +26,11 @@ export class AppComponent implements OnInit {
       title: 'Bitoin Umrechner',
       url: 'bitcoin-converter',
       icon: 'sync-outline'
+    }, 
+    {
+      title: 'Chart',
+      url: 'chart',
+      icon: 'bar-chart-outline'
     }
   ];
 
