@@ -4,8 +4,15 @@
 
 export const environment = {
   production: false,
-  tickerUrl: 'https://blockchain.info/ticker'
+  tickerUrl: 'https://blockchain.info/ticker',
+  marketcapUrl: 'https://blockchain.info/q/marketcap',
+  totalbcUrl: 'https://blockchain.info/q/totalbc', 
+  daytransactioncountUrl: 'https://blockchain.info/q/24hrtransactioncount',
+  daybtcsentUrl: 'https://blockchain.info/q/24hrbtcsent',
+  hashrateUrl:'https://blockchain.info/q/hashrate',
+  getdifficulty: 'https://blockchain.info/q/getdifficulty'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
