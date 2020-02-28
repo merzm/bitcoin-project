@@ -15,12 +15,17 @@ export class AppComponent implements OnInit {
     {
       title: 'Dashboard',
       url: 'dashboard',
-      icon: 'mail'
+      icon: 'logo-euro'
     }, 
     {
       title: 'Bitcoin-Details',
       url: 'bitcoin-details',
-      icon: 'mail'
+      icon: 'analytics-outline'
+    },
+    {
+      title: 'Bitoin Umrechner',
+      url: 'bitcoin-converter',
+      icon: 'sync-outline'
     }
   ];
 
